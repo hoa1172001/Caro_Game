@@ -191,7 +191,6 @@ public class ComputerPlayer implements Player {
 			}
 			alpha = Math.max(alpha, v);
 		}
-
 		return v;
 	}
 
@@ -202,7 +201,6 @@ public class ComputerPlayer implements Player {
 		if (depth >= maxDepth) {
 			return value;
 		}
-		
 		ArrayList<Point> list = new ArrayList<>(); // list cac nut con 
 		for (int i = 0; i < maxMove; i++) {
 			Point node = eBoard.MaxPos();
@@ -224,9 +222,7 @@ public class ComputerPlayer implements Player {
 		}
 		return v;
 	}
-
 	
-
 	// tinh toan nuoc di
 	public Point AI(int player) {
 		alphaBeta(0, 1,2 ,player);
